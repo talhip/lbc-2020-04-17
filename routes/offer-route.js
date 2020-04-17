@@ -67,9 +67,9 @@ router.get("/offer/with-count", async (req, res) => {
     let sort = {};
 
     if (req.query.sort === "date-desc") {
-      sort = { date: "desc" };
+      sort = { created: "desc" };
     } else if (req.query.sort === "date-asc") {
-      sort = { date: "asc" };
+      sort = { created: "asc" };
     } else if (req.query.sort === "price-asc") {
       sort = { price: "asc" };
     } else if (req.query.sort === "price-desc") {
